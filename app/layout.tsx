@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     description: 'Building intelligent digital experiences with cutting-edge technology',
     type: 'website',
   },
+  icons: {
+    icon: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({

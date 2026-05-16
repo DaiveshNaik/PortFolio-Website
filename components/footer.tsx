@@ -46,13 +46,6 @@ export default function Footer() {
               </motion.a>
             ))}
           </div>
-
-          {/* Made with love */}
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <span>Made with</span>
-            <Heart className="w-4 h-4 text-red-500 fill-red-500" />
-            <span>by Daivesh</span>
-          </div>
         </div>
       </div>
     </footer>

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Terminal } from 'lucide-react'
 
 const loadingSteps = [
   { text: 'Initializing neural networks...', icon: '🧠' },
@@ -81,10 +82,11 @@ export default function LoadingScreen() {
               transition={{ duration: 0.8, type: 'spring' }}
               className="mb-10"
             >
-              <div className="relative inline-block">
-                <motion.span 
+              <div className="relative inline-flex items-center gap-4">
+                <Terminal className="w-16 h-16 text-primary animate-pulse" />
+                <motion.span
                   className="text-7xl font-bold gradient-text"
-                  animate={{ 
+                  animate={{
                     textShadow: [
                       '0 0 20px rgba(59, 130, 246, 0.5)',
                       '0 0 40px rgba(59, 130, 246, 0.8)',
@@ -95,16 +97,6 @@ export default function LoadingScreen() {
                 >
                   DN
                 </motion.span>
-                {/* Orbiting dot */}
-                <motion.div
-                  className="absolute w-3 h-3 rounded-full bg-cyan-400"
-                  style={{ filter: 'drop-shadow(0 0 10px #06b6d4)' }}
-                  animate={{
-                    rotate: 360,
-                  }}
-                  transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
-                  initial={{ top: '50%', left: '50%', x: 50, y: -25 }}
-                />
               </div>
             </motion.div>
 
@@ -120,24 +112,23 @@ export default function LoadingScreen() {
                 <div className="w-3 h-3 rounded-full bg-red-500" />
                 <div className="w-3 h-3 rounded-full bg-yellow-500" />
                 <div className="w-3 h-3 rounded-full bg-green-500" />
-                <span className="ml-2 text-xs text-muted-foreground">daivesh@portfolio ~</span>
+                <span className="ml-2 text-xs text-muted-foreground">Daivesh Naik</span>
               </div>
-              
+
               {/* Loading steps */}
               <div className="space-y-2">
                 {loadingSteps.map((step, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, x: -10 }}
-                    animate={{ 
+                    animate={{
                       opacity: index <= currentStep ? 1 : 0.3,
                       x: 0
                     }}
                     transition={{ delay: index * 0.1 }}
-                    className={`flex items-center gap-2 ${
-                      index < currentStep ? 'text-green-400' : 
-                      index === currentStep ? 'text-cyan-400' : 'text-muted-foreground'
-                    }`}
+                    className={`flex items-center gap-2 ${index < currentStep ? 'text-green-400' :
+                        index === currentStep ? 'text-cyan-400' : 'text-muted-foreground'
+                      }`}
                   >
                     <span className="w-4 text-center">
                       {index < currentStep ? '✓' : index === currentStep ? '>' : '○'}
@@ -158,7 +149,7 @@ export default function LoadingScreen() {
             </motion.div>
 
             {/* Progress bar */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
