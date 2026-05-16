@@ -22,7 +22,7 @@ const projects = [
     category: 'Front End',
   },
   {
-    title: '🤖 AI Copilot for Admin Panel',
+    title: 'AI Copilot for Admin Panel',
     subtitle: 'with Code Generation',
     description: 'React + TypeScript-based AI assistant that helps developers generate, debug, and explain code within admin dashboards.',
     technologies: ['React', 'TypeScript', 'AI', 'Admin Panel'],
