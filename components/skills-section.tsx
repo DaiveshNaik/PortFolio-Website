@@ -25,6 +25,7 @@ const skillCategories = [
       { name: 'Python', level: 80, logo: 'Python' as const },
       { name: 'PostgreSQL', level: 80, logo: 'PostgreSQL' as const },
       { name: 'MongoDB', level: 85, logo: 'MongoDB' as const },
+      { name: 'n8n', level: 75, logo: 'n8n' as const },
     ],
   },
   {
@@ -68,6 +69,7 @@ const techStack = [
   { name: 'Angular', logo: 'Angular' as const },
   { name: 'TensorFlow', logo: 'TensorFlow' as const },
   { name: 'Tailwind', logo: 'Tailwind' as const },
+  { name: 'n8n', logo: 'n8n' as const },
 ]
 
 export default function SkillsSection() {

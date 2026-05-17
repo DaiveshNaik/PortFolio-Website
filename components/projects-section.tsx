@@ -40,13 +40,13 @@ const projects = [
   {
     title: 'E-Commerce Multi-Vendor Platform',
     subtitle: 'with AI Chatbot',
-    description: 'A comprehensive multi-vendor e-commerce platform featuring an AI-powered chatbot for customer support, secure authentication, and scalable architecture.',
-    technologies: ['React.js', 'Node.js', 'Spring Boot', 'MySQL', 'JWT', 'Generative AI'],
+    description: 'A comprehensive multi-vendor e-commerce platform featuring an AI-powered chatbot for customer support, secure authentication, scalable architecture, and integrated payment gateways (Stripe & Razorpay).',
+    technologies: ['React.js', 'Node.js', 'Spring Boot', 'MySQL', 'JWT', 'Generative AI', 'Stripe', 'Razorpay'],
     features: [
       'Multi-vendor marketplace system',
       'AI chatbot for customer queries',
       'Secure JWT authentication',
-      'Scalable microservices architecture',
+      'Stripe & Razorpay Integration',
     ],
     image: '/projects/ecommerce.jpg',
     liveUrl: '#',
@@ -56,12 +56,12 @@ const projects = [
   {
     title: 'Task Management System',
     subtitle: 'with Live Chat',
-    description: 'Real-time task management application with integrated live chat functionality, enabling teams to collaborate effectively.',
-    technologies: ['React.js', 'Spring Boot', 'MySQL', 'WebSockets'],
+    description: 'Real-time task management application with integrated live chat functionality, enabling teams to collaborate effectively and handle payments seamlessly with Razorpay.',
+    technologies: ['React.js', 'Spring Boot', 'MySQL', 'WebSockets', 'Razorpay'],
     features: [
       'Real-time chat functionality',
       'Task tracking & management',
-      'JWT authentication',
+      'Razorpay Payment Integration',
       'RESTful API design',
     ],
     image: '/projects/taskmanager.jpg',
