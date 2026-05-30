@@ -56,7 +56,7 @@ export default function FloatingTerminalBg() {
   }, [])
 
   return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0 opacity-[0.15]">
+    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0 opacity-[0.45]">
       {items.map((item, i) => (
         <motion.div
           key={i}
